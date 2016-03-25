@@ -27,7 +27,7 @@ def oauth_callback(request):
         'client_id': '2027959579',
         'client_secret': 'f839c30fc7681ba271dd28d2356b37d4',
         'grant_type': 'authorization_code',
-        'redirect_uri': '127.0.0.1:8000/callback',
+        'redirect_uri': 'http://1.weiboemoticon.applinzi.com/callback',
         'code': code
     }
     data = urllib.urlencode(values)
