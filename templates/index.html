@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title></title>
+    <title>Weibo Emotion</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -18,19 +18,31 @@
 <body>
 
 <!-- Add your site or application content here -->
-<p>Hello world! This is HTML5 Boilerplate.</p>
+<p>Hello world!</p>
 
 {% if user %}
     <p>
-        Hello {{ name }}!
+        Hello {{ name }} ({{ uid }})!
     </p>
-    <img src="{{ avatar }}">
+    <a href="http://weibo.com/u/{{ uid }}" target=_blank>
+        <img src="{{ avatar }}">
+    </a>
+    <p>
+        <a href="/posts/{{ uid }}">All Posts</a>
+    </p>
+    <p>
+        <a href="/users/">All User</a>
+    </p>
+    <p>
+        <a href="/emotion/{{ uid }}">Emotion</a>
+    </p>
+    
     <form action="logout" >
         <input type="submit" value="Log out">
     </form>
 
 {% else %}
-    <input type="submit" value="Go to Weibo" onclick="oauth()">
+    <input type="submit" value="Login" onclick="oauth()">
 {% endif %}
 
 

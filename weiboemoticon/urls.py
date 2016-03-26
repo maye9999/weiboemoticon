@@ -7,5 +7,6 @@ urlpatterns = [
     url(r'^logout', views.my_logout),
     url(r'^callback', views.oauth_callback, name='callback'),
     url(r'^users', views.all_users),
-    #url(r'^posts/')
+    url(r'^posts/(\d+)/', views.all_posts),
+    url(r'^emotion/(\d+)/', views.emoticon),
 ]
