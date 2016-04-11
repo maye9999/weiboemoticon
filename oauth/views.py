@@ -27,7 +27,7 @@ def oauth_callback(request):
         'client_id': '2027959579',
         'client_secret': 'f839c30fc7681ba271dd28d2356b37d4',
         'grant_type': 'authorization_code',
-        'redirect_uri': 'http://weiboemoticon.applinzi.com/callback',
+        'redirect_uri': 'http://52.3.28.189/callback',
         # 'redirect_uri': 'http://127.0.0.1:8000/callback',
         'code': code
     }
