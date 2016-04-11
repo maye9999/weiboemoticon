@@ -53,7 +53,7 @@ def get_emotion(access_token, uid):
     for t in r:
         text = t['text']
         t = 0
-        if text.find(u'[微笑]') != -1 or text.find(u'[嘻嘻]') != -1 or text.find(u'[哈哈]') != -1 or text.find(u'[可爱]') != -1 or text.find(u'[抱抱]') != -1 or text.find(u'[太开心]') != -1 or text.find(u'[亲亲]') != -1 or text.find(u'[憨笑]') != -1 or text.find(u'[偷笑]') != -1 or text.find(u'[爱你]') != -1  or text.find(u'[鼓掌]') != -1 :
+        if text.find(u'[微笑]') != -1 or text.find(u'[嘻嘻]') != -1 or text.find(u'[哈哈]') != -1 or text.find(u'[笑哈哈]') != -1 or text.find(u'[可爱]') != -1 or text.find(u'[抱抱]') != -1 or text.find(u'[太开心]') != -1 or text.find(u'[亲亲]') != -1 or text.find(u'[憨笑]') != -1 or text.find(u'[偷笑]') != -1 or text.find(u'[爱你]') != -1  or text.find(u'[鼓掌]') != -1 or text.find(u'[得意地笑]') != -1:
             t = 1
         if text.find(u'[泪]') != -1 or text.find(u'[生病]') != -1 or text.find(u'[悲伤]') != -1 or text.find(u'[晕]') != -1 or text.find(u'[怒]') != -1 or text.find(u'[衰]') != -1 or text.find(u'[抓狂]') != -1 or text.find(u'[哼]') != -1 or text.find(u'[怒骂]') != -1 or text.find(u'[失望]') != -1 or text.find(u'[委屈]') != -1 or text.find(u'[吐]') != -1 or text.find(u'[伤心]') != -1 :
             t -= 1
